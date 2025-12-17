@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalyan Institute - Timetable</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic styling for the table itself, can be moved to styles.css */
+    .timetable-container {
+        width: 100%;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .timetable-container table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .timetable-container th, .timetable-container td {
+        border: 1px solid #ddd;
+        padding: 12px 8px;
+        text-align: center;
+    }
+    .timetable-container th {
+        background-color: #0ca9e7; /* Matches your header color */
+        color: white;
+        text-transform: uppercase;
+    }
+    .timetable-container tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    .lecture {
+        background-color: #e0f7fa;
+        font-weight: bold;
+    }
+    .break {
+        background-color: #fff9c4;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="Kalyan Institute Logo">
+    </div>
+    <h1 class="title">Kalyan</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content" style="display: block; padding: 0;">
+    <div class="timetable-container">
+        <h2>B.Tech First Year - Class Timetable</h2>
+        <p>Applicable for Semester I (2025-2026)</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 10:00</td>
+                    <td class="lecture">Engineering Maths</td>
+                    <td class="lecture">Physics Lab</td>
+                    <td class="lecture">Data Structures</td>
+                    <td class="lecture">Engineering Maths</td>
+                    <td class="lecture">Chemistry</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td class="lecture">Basic Electricals</td>
+                    <td class="lecture">Data Structures</td>
+                    <td class="lecture">Communication Skills</td>
+                    <td class="lecture">Physics Theory</td>
+                    <td class="lecture">Data Structures</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 11:30</td>
+                    <td class="break" colspan="5">Short Break</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 12:30</td>
+                    <td class="lecture">Chemistry Lab</td>
+                    <td class="lecture">Engineering Graphics</td>
+                    <td class="lecture">Basic Electricals</td>
+                    <td class="lecture">Data Structures Lab</td>
+                    <td class="lecture">Physics Theory</td>
+                </tr>
+                <tr>
+                    <td>12:30 - 1:30</td>
+                    <td class="break" colspan="5">Lunch Break</td>
+                </tr>
+                <tr>
+                    <td>1:30 - 2:30</td>
+                    <td class="lecture">Communication Skills</td>
+                    <td class="lecture">Engineering Graphics</td>
+                    <td class="lecture">Engineering Maths</td>
+                    <td class="lecture">Chemistry</td>
+                    <td class="lecture">Basic Electricals</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+  </div>
+
+  <footer>
+    Developed by: V Vigneswar | 423190
+  </footer>
+
+</body>
+</html>
